@@ -1,0 +1,6 @@
+{
+    "features": {
+        "ghcr.io/tailscale/codespace/tailscale": {}
+    },
+    "runArgs": ["--device=/dev/net/tun"]
+}
