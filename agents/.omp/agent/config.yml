@@ -1,0 +1,67 @@
+modelRoles:
+  plan: openrouter/google/gemini-4-argon:high
+  slow: openrouter/google/gemini-4-argon:high
+  advisor: openrouter/google/gemini-4-argon:medium
+  commit: google-antigravity/gemini-3.1-flash-lite:low
+  designer: openrouter/google/gemini-4-argon:medium
+  web: google-antigravity/gemini-3.8-flash:low
+  judge: openrouter/google/gemini-4-argon:medium
+  image: google-antigravity/gemini-3-pro-image
+  default: google-antigravity/gemini-3.8-flash:medium
+  vision: google-antigravity/gemini-3.8-flash:medium
+  task: google-antigravity/gemini-3.8-flash:low
+  smol: google-antigravity/gemini-3.1-flash-lite:low
+  tiny: google-antigravity/gemini-3.1-flash-lite:low
+  memory: google-antigravity/gemini-3.1-flash-lite:low
+  widget: google-antigravity/gemini-3.1-flash-lite:low
+symbolPreset: unicode
+theme:
+  dark: titanium
+setupVersion: 2
+astGrep:
+  enabled: true
+generate_image:
+  enabled: true
+github:
+  enabled: true
+compaction:
+  enabled: true
+  thresholdPercent: 40
+retry:
+  enabled: true
+  fallbackChains:
+    openrouter/google/gemini-4-argon:
+      - google-antigravity/gemini-3.8-flash
+task:
+  agentModelOverrides: {}
+  agentPrewalk: {}
+  eager: always
+  isolation:
+    enabled: true
+steeringMode: one-at-a-time
+startup:
+  checkUpdate: false
+features:
+  unexpectedStopDetection: smart
+bashInterceptor:
+  enabled: true
+security:
+  enabled: true
+branchSummary:
+  enabled: true
+live:
+  voice: sol
+personality: pragmatic
+dev:
+  autoqa: false
+checkpoint:
+  enabled: true
+composer:
+  shape: band
+isolation:
+  backend: btrfs
+providers:
+  antigravityEndpoint: production
+disabledExtensions: []
+power:
+  sleepPrevention: system

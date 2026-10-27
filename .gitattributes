@@ -1,0 +1,4 @@
+**/.env filter=git-crypt diff=git-crypt
+
+agents/.omp/agent/models.yml filter=git-crypt diff=git-crypt
+agents/.omp/agent/mcp.json filter=git-crypt diff=git-crypt
